@@ -1,0 +1,37 @@
+<div class="form-group">
+    <label for="exampleFormControlSelect1">Mostrar por categoría</label>
+    <select id="selectOptions" class="form-control"> 
+
+        <% if (data) { 
+            
+            //******Copia las opciones sin que se repitan
+            var opcionesFiltro=["Todas"];//opcion por defecto
+            for(var i = 0; i < opcionesList.length; i++) { //opcionesList siempre devuelve todas las categorias y se recorre
+                opcionesFiltro.push(opcionesList[i].category);
+            } 
+            %>
+
+            <% for(var i = 0; i < opcionesFiltro.length; i++) { %>
+                <option> <%= opcionesFiltro[i]%> </option>
+            <% } %>
+        <% } %>
+    </select>
+    <button id="myButton" onclick="" class="btn btn-primary"> 
+        Mostrar
+    </button>
+
+    <!-- redirecciona según opción-->
+    <script type="text/javascript">
+        var selectOpciones = document.getElementById("selectOptions");
+        document.getElementById("myButton").onclick = function() {
+            if (selectOpciones.value == "Todas") { //si selecciona la primera opcion 
+                location.href = `http://localhost:3000/`;
+                //location.href =`https://videosfav.now.sh`;
+            } else { //si selecciona cualquier otra opcion
+                location.href = `http://localhost:3000/category/${selectOpciones.value}`;
+                //location.href = `https://videosfav.now.sh/category/${selectOpciones.value}`;
+            }
+        };
+    </script>
+
+</div>

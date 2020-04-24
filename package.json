@@ -1,0 +1,25 @@
+{
+    "name": "crud-nodejs-mysql-master",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "publish": "now --prod",
+        "dev": "nodemon index.js",
+        "start": "node ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.0.2",
+        "express": "^4.17.1",
+        "express-myconnection": "^1.0.4",
+        "morgan": "^1.10.0",
+        "mysql": "^2.18.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+   
+}
