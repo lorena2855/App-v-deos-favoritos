@@ -1,4 +1,4 @@
-# App-v-deos-favoritos
+# App Videos Favoritos
 Desarrollo de la aplicación web 'Mis vídeos favoritos de Youtube' utilizando node.js y mysql, que realiza lo siguiente:
 
 Muestra los vídeos favoritos,
