@@ -5,3 +5,5 @@ Muestra los vídeos favoritos,
 Captura los vídeos favoritos.
 Categoriza los vídeos
 En la pagina principal se muestran los vídeos, ordenando los vídeos por fecha de captura mas reciente, muestra el vídeo y su categoría.
+
+Paola Baños
